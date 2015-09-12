@@ -1,5 +1,7 @@
 @import "compass/reset";
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+//@import "compass/css3";
+@import "compass/css3/border-radius";
 
 .brand {
 	text-transform: uppercase;
@@ -36,7 +38,7 @@
 }
 .description {
 	margin-top: 30px;
-	.pagination {
+	.menu {
 		ul {
 			border-bottom: 2px solid red;
 			padding-bottom: 15px;
@@ -44,8 +46,9 @@
 			text-transform: uppercase;
 			display: inline-block;
 			margin-right: 10px;
-			width: auto;
+			height: 100%;
 			cursor: pointer;
+			border-bottom: 2px solid transparent;
 				&:hover {
 					position: relative;
 					border-bottom: 2px solid green;
@@ -54,4 +57,31 @@
 			}
 		}
 	}
+}
+.select-size {
+	margin-top: 20px;
+	h5 {
+		text-transform: uppercase;
+
+	}
+	.circles {
+		width: 20px;
+	    height: 20px;
+	    @include border-radius(10px);
+	    border: 1px solid #000;
+	    background-color: #fff;
+	    color: #000;
+	    font-size: 0.9em;
+	    line-height: 20px;
+	    text-align: center;
+	    display: inline-block;
+	    margin-right: 10px;
+	    cursor: pointer;
+	}
+}
+.circles-click {
+	@extend .circles;
+	background-color: #EF055D !important;
+	color: #fff !important;
+	border: none !important;
 }

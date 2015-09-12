@@ -3419,16 +3419,42 @@ input[type="button"].btn-block {
 
 .description {
   margin-top: 30px; }
-  .description .pagination ul {
+  .description .menu ul {
     border-bottom: 2px solid red;
     padding-bottom: 15px; }
-    .description .pagination ul li {
+    .description .menu ul li {
       text-transform: uppercase;
       display: inline-block;
       margin-right: 10px;
-      width: auto;
-      cursor: pointer; }
-      .description .pagination ul li:hover {
+      height: 100%;
+      cursor: pointer;
+      border-bottom: 2px solid transparent; }
+      .description .menu ul li:hover {
         position: relative;
         border-bottom: 2px solid green;
         bottom: -17px; }
+
+.select-size {
+  margin-top: 20px; }
+  .select-size h5 {
+    text-transform: uppercase; }
+  .select-size .circles, .select-size .circles-click {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9em;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer; }
+
+.circles-click {
+  background-color: #EF055D !important;
+  color: #fff !important;
+  border: none !important; }
