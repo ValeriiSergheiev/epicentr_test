@@ -1,2 +1,57 @@
 @import "compass/reset";
 @import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+.brand {
+	text-transform: uppercase;
+	h5 {
+		font-weight: 700;
+		position: relative;
+	}
+	h5:before {
+		position: absolute;
+		content: "-";
+		left: 0;
+		top: -15px;
+	}
+	h5:after {
+		position: absolute;
+		content: "-";
+		left: 0;
+		bottom: -15px;
+	}
+}
+.name {
+	h1 {
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-top: 40px;
+	}
+}
+.price {
+	h2 {
+		font-weight: 700;
+		color: #EF055D;
+		margin-top: 20px;
+	}
+}
+.description {
+	margin-top: 30px;
+	.pagination {
+		ul {
+			border-bottom: 2px solid red;
+			padding-bottom: 15px;
+			li {
+			text-transform: uppercase;
+			display: inline-block;
+			margin-right: 10px;
+			width: auto;
+			cursor: pointer;
+				&:hover {
+					position: relative;
+					border-bottom: 2px solid green;
+					bottom: -17px;
+				}
+			}
+		}
+	}
+}
