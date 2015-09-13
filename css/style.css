@@ -3418,43 +3418,84 @@ input[type="button"].btn-block {
   margin-top: 20px; }
 
 .description {
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
   .description .menu ul {
-    border-bottom: 2px solid red;
-    padding-bottom: 15px; }
+    border-bottom: 2px solid #F2F2F2; }
     .description .menu ul li {
       text-transform: uppercase;
       display: inline-block;
       margin-right: 10px;
       height: 100%;
       cursor: pointer;
-      border-bottom: 2px solid transparent; }
+      border-bottom: 2px solid transparent;
+      position: relative;
+      bottom: -2px;
+      padding-bottom: 20px;
+      color: #F2F2F2; }
       .description .menu ul li:hover {
-        position: relative;
-        border-bottom: 2px solid green;
-        bottom: -17px; }
+        color: #252525;
+        border-bottom: 2px solid #252525; }
+  .description .menu p {
+    margin: 20px 0; }
+  .description .menu-active {
+    color: #252525 !important;
+    border-bottom: 2px solid #252525 !important; }
+
+.description:before {
+  position: absolute;
+  content: "-";
+  font-weight: 700;
+  left: 0;
+  top: -20px; }
+
+.description:after {
+  position: absolute;
+  content: "-";
+  font-weight: 700;
+  left: 0;
+  bottom: -20px; }
 
 .select-size {
-  margin-top: 20px; }
+  margin-top: 40px;
+  position: relative; }
   .select-size h5 {
     text-transform: uppercase; }
   .select-size .circles, .select-size .circles-click {
     width: 20px;
     height: 20px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -moz-border-radius: 11px;
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
-    font-size: 0.9em;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 18px;
     text-align: center;
     display: inline-block;
     margin-right: 10px;
     cursor: pointer; }
 
+.select-size:after {
+  position: absolute;
+  content: "-";
+  font-weight: 700;
+  left: 0;
+  bottom: -40px; }
+
 .circles-click {
   background-color: #EF055D !important;
   color: #fff !important;
   border: none !important; }
+
+.cart {
+  margin-top: 60px; }
+  .cart input {
+    text-transform: uppercase;
+    border: none;
+    background-color: #212121;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 8px 50px; }
